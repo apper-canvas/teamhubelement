@@ -3,7 +3,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import { ToastContainer } from "react-toastify";
-import userReducer from '@/store/userSlice';
+import userReducer, { setUser, clearUser } from '@/store/userSlice';
 import Layout from "@/components/organisms/Layout";
 import Dashboard from "@/components/pages/Dashboard";
 import Employees from "@/components/pages/Employees";
@@ -75,9 +75,8 @@ function App() {
             }
           } else {
             navigate('/');
-          }
+}
           // Store user information in Redux
-          const { setUser } = require('@/store/userSlice');
           store.dispatch(setUser(JSON.parse(JSON.stringify(user))));
         } else {
           // User is not authenticated
@@ -101,8 +100,7 @@ function App() {
             navigate(currentPath);
           } else {
             navigate('/login');
-          }
-          const { clearUser } = require('@/store/userSlice');
+}
           store.dispatch(clearUser());
         }
       },
@@ -119,8 +117,7 @@ function App() {
     logout: async () => {
       try {
         const { ApperUI } = window.ApperSDK;
-        await ApperUI.logout();
-        const { clearUser } = require('@/store/userSlice');
+await ApperUI.logout();
         store.dispatch(clearUser());
         navigate('/login');
       } catch (error) {
