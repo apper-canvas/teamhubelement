@@ -1,0 +1,102 @@
+[
+  {
+    "Id": 1,
+    "name": "John Doe",
+    "email": "john.doe@company.com",
+    "phone": "+1 (555) 123-4567",
+    "role": "Software Engineer",
+    "department": "Engineering",
+    "joinDate": "2023-01-15",
+    "status": "active"
+  },
+  {
+    "Id": 2,
+    "name": "Sarah Johnson",
+    "email": "sarah.johnson@company.com",
+    "phone": "+1 (555) 234-5678",
+    "role": "Marketing Manager",
+    "department": "Marketing",
+    "joinDate": "2022-11-20",
+    "status": "active"
+  },
+  {
+    "Id": 3,
+    "name": "Michael Chen",
+    "email": "michael.chen@company.com",
+    "phone": "+1 (555) 345-6789",
+    "role": "Senior Developer",
+    "department": "Engineering",
+    "joinDate": "2022-08-10",
+    "status": "active"
+  },
+  {
+    "Id": 4,
+    "name": "Emily Rodriguez",
+    "email": "emily.rodriguez@company.com",
+    "phone": "+1 (555) 456-7890",
+    "role": "HR Specialist",
+    "department": "Human Resources",
+    "joinDate": "2023-03-05",
+    "status": "active"
+  },
+  {
+    "Id": 5,
+    "name": "David Wilson",
+    "email": "david.wilson@company.com",
+    "phone": "+1 (555) 567-8901",
+    "role": "Sales Representative",
+    "department": "Sales",
+    "joinDate": "2023-02-14",
+    "status": "active"
+  },
+  {
+    "Id": 6,
+    "name": "Lisa Thompson",
+    "email": "lisa.thompson@company.com",
+    "phone": "+1 (555) 678-9012",
+    "role": "Financial Analyst",
+    "department": "Finance",
+    "joinDate": "2022-12-01",
+    "status": "active"
+  },
+  {
+    "Id": 7,
+    "name": "Robert Garcia",
+    "email": "robert.garcia@company.com",
+    "phone": "+1 (555) 789-0123",
+    "role": "Product Manager",
+    "department": "Engineering",
+    "joinDate": "2022-09-18",
+    "status": "active"
+  },
+  {
+    "Id": 8,
+    "name": "Amanda Lee",
+    "email": "amanda.lee@company.com",
+    "phone": "+1 (555) 890-1234",
+    "role": "UX Designer",
+    "department": "Design",
+    "joinDate": "2023-04-22",
+    "status": "active"
+  },
+  {
+    "Id": 9,
+    "name": "James Miller",
+    "email": "james.miller@company.com",
+    "phone": "+1 (555) 901-2345",
+    "role": "Operations Manager",
+    "department": "Operations",
+    "joinDate": "2022-07-30",
+    "status": "archived"
+  },
+  {
+    "Id": 10,
+    "name": "Jennifer Brown",
+    "email": "jennifer.brown@company.com",
+    "phone": "+1 (555) 012-3456",
+    "role": "Customer Support Lead",
+    "department": "Customer Support",
+    "joinDate": "2023-01-08",
+    "status": "active"
+  }
+]

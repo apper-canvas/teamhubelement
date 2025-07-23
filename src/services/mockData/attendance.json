@@ -1,0 +1,98 @@
+[
+  {
+    "Id": 1,
+    "employeeId": 1,
+    "date": "2024-01-15",
+    "checkIn": "09:00:00",
+    "checkOut": "17:30:00",
+    "status": "present"
+  },
+  {
+    "Id": 2,
+    "employeeId": 2,
+    "date": "2024-01-15",
+    "checkIn": "08:45:00",
+    "checkOut": "17:15:00",
+    "status": "present"
+  },
+  {
+    "Id": 3,
+    "employeeId": 3,
+    "date": "2024-01-15",
+    "checkIn": "09:15:00",
+    "checkOut": "17:45:00",
+    "status": "late"
+  },
+  {
+    "Id": 4,
+    "employeeId": 4,
+    "date": "2024-01-15",
+    "checkIn": null,
+    "checkOut": null,
+    "status": "absent"
+  },
+  {
+    "Id": 5,
+    "employeeId": 5,
+    "date": "2024-01-15",
+    "checkIn": "08:55:00",
+    "checkOut": "17:20:00",
+    "status": "present"
+  },
+  {
+    "Id": 6,
+    "employeeId": 6,
+    "date": "2024-01-15",
+    "checkIn": null,
+    "checkOut": null,
+    "status": "leave"
+  },
+  {
+    "Id": 7,
+    "employeeId": 7,
+    "date": "2024-01-15",
+    "checkIn": "09:05:00",
+    "checkOut": "17:35:00",
+    "status": "late"
+  },
+  {
+    "Id": 8,
+    "employeeId": 8,
+    "date": "2024-01-15",
+    "checkIn": "08:50:00",
+    "checkOut": "17:10:00",
+    "status": "present"
+  },
+  {
+    "Id": 9,
+    "employeeId": 10,
+    "date": "2024-01-15",
+    "checkIn": "09:00:00",
+    "checkOut": "17:00:00",
+    "status": "present"
+  },
+  {
+    "Id": 10,
+    "employeeId": 1,
+    "date": "2024-01-14",
+    "checkIn": "08:58:00",
+    "checkOut": "17:25:00",
+    "status": "present"
+  },
+  {
+    "Id": 11,
+    "employeeId": 2,
+    "date": "2024-01-14",
+    "checkIn": "09:10:00",
+    "checkOut": "17:40:00",
+    "status": "late"
+  },
+  {
+    "Id": 12,
+    "employeeId": 3,
+    "date": "2024-01-14",
+    "checkIn": "08:45:00",
+    "checkOut": "17:15:00",
+    "status": "present"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "Id": 1,
+    "name": "Engineering",
+    "head": "Robert Garcia",
+    "employeeCount": 3
+  },
+  {
+    "Id": 2,
+    "name": "Marketing",
+    "head": "Sarah Johnson",
+    "employeeCount": 1
+  },
+  {
+    "Id": 3,
+    "name": "Human Resources",
+    "head": "Emily Rodriguez",
+    "employeeCount": 1
+  },
+  {
+    "Id": 4,
+    "name": "Sales",
+    "head": "David Wilson",
+    "employeeCount": 1
+  },
+  {
+    "Id": 5,
+    "name": "Finance",
+    "head": "Lisa Thompson",
+    "employeeCount": 1
+  },
+  {
+    "Id": 6,
+    "name": "Design",
+    "head": "Amanda Lee",
+    "employeeCount": 1
+  },
+  {
+    "Id": 7,
+    "name": "Operations",
+    "head": "James Miller",
+    "employeeCount": 0
+  },
+  {
+    "Id": 8,
+    "name": "Customer Support",
+    "head": "Jennifer Brown",
+    "employeeCount": 1
+  }
+]

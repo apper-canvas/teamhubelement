@@ -1,0 +1,82 @@
+[
+  {
+    "Id": 1,
+    "employeeId": 1,
+    "startDate": "2024-01-20",
+    "endDate": "2024-01-22",
+    "type": "vacation",
+    "reason": "Family vacation to Hawaii",
+    "status": "pending",
+    "approvedBy": null
+  },
+  {
+    "Id": 2,
+    "employeeId": 2,
+    "startDate": "2024-01-18",
+    "endDate": "2024-01-19",
+    "type": "sick",
+    "reason": "Flu symptoms and doctor's appointment",
+    "status": "approved",
+    "approvedBy": "HR Manager"
+  },
+  {
+    "Id": 3,
+    "employeeId": 3,
+    "startDate": "2024-01-25",
+    "endDate": "2024-01-26",
+    "type": "personal",
+    "reason": "Moving to new apartment",
+    "status": "pending",
+    "approvedBy": null
+  },
+  {
+    "Id": 4,
+    "employeeId": 5,
+    "startDate": "2024-01-22",
+    "endDate": "2024-01-24",
+    "type": "vacation",
+    "reason": "Weekend getaway with family",
+    "status": "rejected",
+    "approvedBy": "HR Manager"
+  },
+  {
+    "Id": 5,
+    "employeeId": 6,
+    "startDate": "2024-01-15",
+    "endDate": "2024-01-16",
+    "type": "sick",
+    "reason": "Medical procedure",
+    "status": "approved",
+    "approvedBy": "HR Manager"
+  },
+  {
+    "Id": 6,
+    "employeeId": 7,
+    "startDate": "2024-01-30",
+    "endDate": "2024-02-02",
+    "type": "vacation",
+    "reason": "Annual leave",
+    "status": "pending",
+    "approvedBy": null
+  },
+  {
+    "Id": 7,
+    "employeeId": 8,
+    "startDate": "2024-01-28",
+    "endDate": "2024-01-28",
+    "type": "personal",
+    "reason": "Child's school event",
+    "status": "approved",
+    "approvedBy": "HR Manager"
+  },
+  {
+    "Id": 8,
+    "employeeId": 10,
+    "startDate": "2024-02-05",
+    "endDate": "2024-02-07",
+    "type": "vacation",
+    "reason": "Long weekend trip",
+    "status": "pending",
+    "approvedBy": null
+  }
+]
