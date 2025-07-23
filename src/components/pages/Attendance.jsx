@@ -52,20 +52,19 @@ const Attendance = () => {
 
   const filterAttendance = () => {
     let filtered = [...attendance];
+if (searchTerm) {
+    filtered = filtered.filter(att => {
+      const employee = employees.find(emp => emp.Id === att.employeeId);
+      return employee && employee.name.toLowerCase().includes(searchTerm.toLowerCase());
+    });
+  }
 
-    if (searchTerm) {
-      filtered = filtered.filter(att => {
-        const employee = employees.find(emp => emp.Id === att.employeeId);
-        return employee && employee.name.toLowerCase().includes(searchTerm.toLowerCase());
-      });
-    }
+  if (statusFilter) {
+    filtered = filtered.filter(att => att.status === statusFilter);
+  }
 
-    if (statusFilter) {
-      filtered = filtered.filter(att => att.status === statusFilter);
-    }
-
-    setFilteredAttendance(filtered);
-  };
+  setFilteredAttendance(filtered);
+};
 
   const handleCheckIn = async (employeeId) => {
     try {

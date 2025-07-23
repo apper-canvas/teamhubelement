@@ -1,14 +1,16 @@
-import { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { format } from "date-fns";
-import StatCard from "@/components/molecules/StatCard";
+import employeeService from "@/services/api/employeeService";
+import leaveRequestService from "@/services/api/leaveRequestService";
+import attendanceService from "@/services/api/attendanceService";
+import Employees from "@/components/pages/Employees";
+import Attendance from "@/components/pages/Attendance";
 import EmployeeCard from "@/components/molecules/EmployeeCard";
 import LeaveRequestCard from "@/components/molecules/LeaveRequestCard";
-import Loading from "@/components/ui/Loading";
+import StatCard from "@/components/molecules/StatCard";
 import Error from "@/components/ui/Error";
-import employeeService from "@/services/api/employeeService";
-import attendanceService from "@/services/api/attendanceService";
-import leaveRequestService from "@/services/api/leaveRequestService";
+import Loading from "@/components/ui/Loading";
 
 const Dashboard = () => {
   const [employees, setEmployees] = useState([]);
@@ -49,10 +51,8 @@ const Dashboard = () => {
   const presentToday = attendance.filter(att => att.status === "present").length;
   const lateToday = attendance.filter(att => att.status === "late").length;
   const absentToday = attendance.filter(att => att.status === "absent").length;
-
-  const recentEmployees = activeEmployees.slice(0, 6);
+const recentEmployees = activeEmployees.slice(0, 6);
   const pendingLeaves = leaveRequests.slice(0, 6);
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

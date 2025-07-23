@@ -48,15 +48,15 @@ const Departments = () => {
   const filterDepartments = () => {
     let filtered = [...departments];
 
-    if (searchTerm) {
-      filtered = filtered.filter(dept =>
-        dept.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        dept.head.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-    }
+if (searchTerm) {
+    filtered = filtered.filter(dept =>
+      dept.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      dept.head.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  }
 
-    setFilteredDepartments(filtered);
-  };
+  setFilteredDepartments(filtered);
+};
 
   const handleViewDepartment = (department) => {
     // This could open a modal or navigate to a department detail page

@@ -52,26 +52,26 @@ const LeaveRequests = () => {
   const filterRequests = () => {
     let filtered = [...leaveRequests];
 
-    if (searchTerm) {
-      filtered = filtered.filter(request => {
-        const employee = employees.find(emp => emp.Id === request.employeeId);
-        return employee && employee.name.toLowerCase().includes(searchTerm.toLowerCase());
-      });
-    }
+if (searchTerm) {
+    filtered = filtered.filter(request => {
+      const employee = employees.find(emp => emp.Id === request.employeeId);
+      return employee && employee.name.toLowerCase().includes(searchTerm.toLowerCase());
+    });
+  }
 
-    if (statusFilter) {
-      filtered = filtered.filter(request => request.status === statusFilter);
-    }
+  if (statusFilter) {
+    filtered = filtered.filter(request => request.status === statusFilter);
+  }
 
-    if (typeFilter) {
-      filtered = filtered.filter(request => request.type === typeFilter);
-    }
+  if (typeFilter) {
+    filtered = filtered.filter(request => request.type === typeFilter);
+  }
 
-    // Sort by date (newest first)
-    filtered.sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
+  // Sort by date (newest first)
+  filtered.sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
 
-    setFilteredRequests(filtered);
-  };
+  setFilteredRequests(filtered);
+};
 
   const handleApprove = async (requestId) => {
     if (window.confirm("Are you sure you want to approve this leave request?")) {

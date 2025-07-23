@@ -1,11 +1,11 @@
-import { useState } from "react";
+import React, { useContext, useState } from "react";
 import { motion } from "framer-motion";
+import { AuthContext } from "@/App";
 import ApperIcon from "@/components/ApperIcon";
 import Button from "@/components/atoms/Button";
-
 const Header = ({ title, onMenuToggle, showMenuButton = false }) => {
   const [showNotifications, setShowNotifications] = useState(false);
-
+  const { logout } = useContext(AuthContext);
   const notifications = [
     {
       id: 1,
@@ -110,7 +110,7 @@ const Header = ({ title, onMenuToggle, showMenuButton = false }) => {
                   <Button variant="outline" className="w-full" size="sm">
                     View All Notifications
                   </Button>
-                </div>
+</div>
               </motion.div>
             )}
           </div>
@@ -123,8 +123,18 @@ const Header = ({ title, onMenuToggle, showMenuButton = false }) => {
               <p className="font-medium text-slate-800">Admin User</p>
               <p className="text-slate-600 text-sm">HR Manager</p>
             </div>
+            <Button
+              onClick={logout}
+              variant="outline"
+              size="sm"
+              className="ml-2"
+            >
+              <ApperIcon name="LogOut" className="w-4 h-4 mr-2" />
+              Logout
+            </Button>
           </div>
         </div>
+      </div>
       </div>
     </motion.header>
   );

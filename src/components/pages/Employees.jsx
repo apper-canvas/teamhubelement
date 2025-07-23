@@ -58,22 +58,22 @@ const Employees = () => {
 
     if (searchTerm) {
       filtered = filtered.filter(emp =>
-        emp.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        emp.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        emp.role.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-    }
+emp.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      emp.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      emp.role.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  }
 
-    if (selectedDepartment) {
-      filtered = filtered.filter(emp => emp.department === selectedDepartment);
-    }
+  if (selectedDepartment) {
+    filtered = filtered.filter(emp => emp.department === selectedDepartment);
+  }
 
-    if (selectedStatus) {
-      filtered = filtered.filter(emp => emp.status === selectedStatus);
-    }
+  if (selectedStatus) {
+    filtered = filtered.filter(emp => emp.status === selectedStatus);
+  }
 
-    setFilteredEmployees(filtered);
-  };
+  setFilteredEmployees(filtered);
+};
 
   const handleAddEmployee = () => {
     setSelectedEmployee(null);
