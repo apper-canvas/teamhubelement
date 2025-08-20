@@ -133,8 +133,7 @@ const Header = ({ title, onMenuToggle, showMenuButton = false }) => {
               Logout
             </Button>
           </div>
-        </div>
-      </div>
+</div>
       </div>
     </motion.header>
   );
